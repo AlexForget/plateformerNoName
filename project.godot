@@ -20,6 +20,14 @@ window/size/viewport_width=800
 window/size/viewport_height=450
 window/stretch/mode="canvas_items"
 
+[layer_names]
+
+2d_physics/layer_1="PLayer"
+2d_physics/layer_2="Enemies"
+2d_physics/layer_3="Collectibles"
+2d_physics/layer_4="Objective"
+2d_physics/layer_5="Ground"
+
 [rendering]
 
 renderer/rendering_method="gl_compatibility"

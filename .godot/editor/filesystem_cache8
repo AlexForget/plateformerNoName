@@ -1,13 +1,21 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1708456999
+::res://::1708459232
 icon.svg::CompressedTexture2D::5742230089954420331::1708445300::1708447166::1::::<><>::
 Level1.gd::GDScript::-1::1708455192::0::1::::<>Node2D<>::
-::res://graphics/::1708456720
+::res://graphics/::1708457256
+::res://graphics/background/::1708457258
+Blue.png::CompressedTexture2D::41259842657103084::1708454077::1708457258::1::::<><>::
+Brown.png::CompressedTexture2D::7447880107455333009::1708454077::1708457258::1::::<><>::
+Gray.png::CompressedTexture2D::6319713890575888214::1708454077::1708457258::1::::<><>::
+Green.png::CompressedTexture2D::3112401277972466017::1708454077::1708457258::1::::<><>::
+Pink.png::CompressedTexture2D::4933854167195491257::1708454077::1708457258::1::::<><>::
+Purple.png::CompressedTexture2D::3927297406106524487::1708454077::1708457258::1::::<><>::
+Yellow.png::CompressedTexture2D::8030776569678562533::1708454077::1708457258::1::::<><>::
 ::res://graphics/tilesets/::1708456720
 Terrain (16x16).png::CompressedTexture2D::2650754949302879426::1708454166::1708454172::1::::<><>::
-::res://levels/::1708456768
-level_1.tscn::PackedScene::599224644718898231::1708456768::0::1::::<><>::res://Level1.gd<>uid://bd1bsua4q18y5::::res://graphics/tilesets/Terrain (16x16).png
-::res://scenes/::1708456999
-::res://scenes/player/::1708456999
-player.gd::GDScript::-1::1708453293::0::1::::<>CharacterBody2D<>::
-player.tscn::PackedScene::1818031048035042936::1708456999::0::1::::<><>::res://scenes/player/player.gd<>uid://cn2txqmtm6vwt::::res://icon.svg
+::res://scenes/::1708457003
+::res://scenes/levels/::1708459175
+level_1.tscn::PackedScene::599224644718898231::1708459175::0::1::::<><>::res://Level1.gd<>uid://bd1bsua4q18y5::::res://graphics/tilesets/Terrain (16x16).png<>uid://bklw2ah8lj6an::::res://graphics/background/Green.png
+::res://scenes/player/::1708459175
+player.gd::GDScript::-1::1708457055::0::1::::<>CharacterBody2D<>::
+player.tscn::PackedScene::1818031048035042936::1708459175::0::1::::<><>::res://scenes/player/player.gd<>uid://cn2txqmtm6vwt::::res://icon.svg
