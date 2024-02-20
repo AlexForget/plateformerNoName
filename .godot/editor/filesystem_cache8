@@ -1,0 +1,12 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1708456761
+icon.svg::CompressedTexture2D::5742230089954420331::1708445300::1708447166::1::::<><>::
+Level1.gd::GDScript::-1::1708455192::0::1::::<>Node2D<>::
+::res://graphics/::1708456720
+::res://graphics/tilesets/::1708456720
+Terrain (16x16).png::CompressedTexture2D::2650754949302879426::1708454166::1708454172::1::::<><>::
+::res://levels/::1708456720
+level_1.tscn::PackedScene::599224644718898231::1708456656::0::1::::<><>::res://Level1.gd<>uid://bd1bsua4q18y5::::res://graphics/tilesets/Terrain (16x16).png
+::res://scenes/::1708456720
+player.gd::GDScript::-1::1708453293::0::1::::<>CharacterBody2D<>::
+player.tscn::PackedScene::1818031048035042936::1708456655::0::1::::<><>::res://scenes/player.gd<>uid://cn2txqmtm6vwt::::res://icon.svg
