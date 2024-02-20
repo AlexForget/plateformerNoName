@@ -1,11 +1,11 @@
 [gd_scene load_steps=5 format=3 uid="uid://isje3s7mufnj"]
 
-[ext_resource type="Script" path="res://Level1.gd" id="1_cnrkq"]
-[ext_resource type="Texture2D" uid="uid://bd1bsua4q18y5" path="res://graphics/tilesets/Terrain (16x16).png" id="2_y32ig"]
+[ext_resource type="Script" path="res://Level1.gd" id="1_cpvdu"]
+[ext_resource type="Texture2D" uid="uid://bd1bsua4q18y5" path="res://graphics/tilesets/Terrain (16x16).png" id="2_pubu3"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_useop"]
 resource_name = "Terrain"
-texture = ExtResource("2_y32ig")
+texture = ExtResource("2_pubu3")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -155,7 +155,7 @@ texture = ExtResource("2_y32ig")
 sources/0 = SubResource("TileSetAtlasSource_useop")
 
 [node name="Level1" type="Node2D"]
-script = ExtResource("1_cnrkq")
+script = ExtResource("1_cpvdu")
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_fbvbj")
