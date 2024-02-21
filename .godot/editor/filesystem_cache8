@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1708479879
+::res://::1708548069
 icon.svg::CompressedTexture2D::5742230089954420331::1708445300::1708447166::1::::<><>::
 Level1.gd::GDScript::-1::1708455192::0::1::::<>Node2D<>::
 ::res://graphics/::1708481163
@@ -11,10 +11,11 @@ Green.png::CompressedTexture2D::3112401277972466017::1708454077::1708457258::1::
 Pink.png::CompressedTexture2D::4933854167195491257::1708454077::1708457258::1::::<><>::
 Purple.png::CompressedTexture2D::3927297406106524487::1708454077::1708457258::1::::<><>::
 Yellow.png::CompressedTexture2D::8030776569678562533::1708454077::1708457258::1::::<><>::
-::res://graphics/main characters/::1708454077
+::res://graphics/main characters/::1708548130
 Appearing (96x96).png::CompressedTexture2D::114803674661583198::1708454077::1708481165::1::::<><>::
 Desappearing (96x96).png::CompressedTexture2D::4657454127553560935::1708454077::1708481165::1::::<><>::
-::res://graphics/main characters/Mask Dude/::1708454077
+slime spritesheet calciumtrice.png::CompressedTexture2D::864013436508682451::1708547869::1708548133::1::::<><>::
+::res://graphics/main characters/Mask Dude/::1708481165
 Double Jump (32x32).png::CompressedTexture2D::4218882772229601264::1708454077::1708481165::1::::<><>::
 Fall (32x32).png::CompressedTexture2D::1767341618268666488::1708454077::1708481165::1::::<><>::
 Hit (32x32).png::CompressedTexture2D::936477313094891759::1708454077::1708481165::1::::<><>::
@@ -22,7 +23,7 @@ Idle (32x32).png::CompressedTexture2D::5916054423545006169::1708454077::17084811
 Jump (32x32).png::CompressedTexture2D::6670075801002009514::1708454077::1708481165::1::::<><>::
 Run (32x32).png::CompressedTexture2D::8684399399224418850::1708454077::1708481165::1::::<><>::
 Wall Jump (32x32).png::CompressedTexture2D::6870175011266569645::1708454077::1708481165::1::::<><>::
-::res://graphics/main characters/Ninja Frog/::1708454077
+::res://graphics/main characters/Ninja Frog/::1708481165
 Double Jump (32x32).png::CompressedTexture2D::9096622784697288683::1708454077::1708481165::1::::<><>::
 Fall (32x32).png::CompressedTexture2D::5747429798525221337::1708454077::1708481165::1::::<><>::
 Hit (32x32).png::CompressedTexture2D::3460401114174623523::1708454077::1708481165::1::::<><>::
@@ -30,7 +31,7 @@ Idle (32x32).png::CompressedTexture2D::7523472879134525121::1708454077::17084811
 Jump (32x32).png::CompressedTexture2D::2218726063552377176::1708454077::1708481165::1::::<><>::
 Run (32x32).png::CompressedTexture2D::6813451533344019160::1708454077::1708481165::1::::<><>::
 Wall Jump (32x32).png::CompressedTexture2D::6164179321974564459::1708454077::1708481165::1::::<><>::
-::res://graphics/main characters/Pink Man/::1708454077
+::res://graphics/main characters/Pink Man/::1708481165
 Double Jump (32x32).png::CompressedTexture2D::3035762213250195099::1708454077::1708481165::1::::<><>::
 Fall (32x32).png::CompressedTexture2D::415417075242150385::1708454077::1708481165::1::::<><>::
 Hit (32x32).png::CompressedTexture2D::8349914991981065062::1708454077::1708481165::1::::<><>::
@@ -38,7 +39,7 @@ Idle (32x32).png::CompressedTexture2D::5465555538230931081::1708454077::17084811
 Jump (32x32).png::CompressedTexture2D::5832780096576330798::1708454077::1708481165::1::::<><>::
 Run (32x32).png::CompressedTexture2D::8233916551500814191::1708454077::1708481165::1::::<><>::
 Wall Jump (32x32).png::CompressedTexture2D::8660512721691597144::1708454077::1708481165::1::::<><>::
-::res://graphics/main characters/Virtual Guy/::1708454077
+::res://graphics/main characters/Virtual Guy/::1708481165
 Double Jump (32x32).png::CompressedTexture2D::7293597247403790024::1708454077::1708481165::1::::<><>::
 Fall (32x32).png::CompressedTexture2D::2922339137531236521::1708454077::1708481165::1::::<><>::
 Hit (32x32).png::CompressedTexture2D::6285276615031028405::1708454077::1708481165::1::::<><>::
@@ -49,8 +50,8 @@ Wall Jump (32x32).png::CompressedTexture2D::6486360919088004165::1708454077::170
 ::res://graphics/tilesets/::1708456720
 Terrain (16x16).png::CompressedTexture2D::2650754949302879426::1708454166::1708454172::1::::<><>::
 ::res://scenes/::1708457003
-::res://scenes/levels/::1708479997
-level_1.tscn::PackedScene::599224644718898231::1708479997::0::1::::<><>::res://Level1.gd<>uid://bd1bsua4q18y5::::res://graphics/tilesets/Terrain (16x16).png<>uid://bklw2ah8lj6an::::res://graphics/background/Green.png<>uid://05wx83sodtsq::::res://scenes/player/player.tscn
-::res://scenes/player/::1708479997
-player.gd::GDScript::-1::1708479957::0::1::::<>CharacterBody2D<>::
-player.tscn::PackedScene::1818031048035042936::1708479997::0::1::::<><>::res://scenes/player/player.gd<>uid://cn2txqmtm6vwt::::res://icon.svg
+::res://scenes/levels/::1708548073
+level_1.tscn::PackedScene::599224644718898231::1708548073::0::1::::<><>::res://Level1.gd<>uid://bd1bsua4q18y5::::res://graphics/tilesets/Terrain (16x16).png<>uid://bklw2ah8lj6an::::res://graphics/background/Green.png<>uid://05wx83sodtsq::::res://scenes/player/player.tscn
+::res://scenes/player/::1708548073
+player.gd::GDScript::-1::1708546636::0::1::::<>CharacterBody2D<>::
+player.tscn::PackedScene::1818031048035042936::1708548073::0::1::::<><>::res://scenes/player/player.gd<>uid://bhvuq7onkjbtx::::res://graphics/main characters/Virtual Guy/Fall (32x32).png

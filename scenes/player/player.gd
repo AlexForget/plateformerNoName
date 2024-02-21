@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-@onready var animator = $AnimationPlayer
+@onready var animator = $AnimatedSprite2D
 
 @export var speed : float = 150.0
 @export var jump_velocity : float = -300.0
@@ -14,6 +14,8 @@ var anim_state = state.IDLE
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 
+func _ready():
+	animator.play("idle")
 
 func _physics_process(delta):
 	# Add the gravity.
@@ -28,20 +30,15 @@ func _physics_process(delta):
 	# As good practice, you should replace UI actions with custom gameplay actions.
 	var direction = Input.get_axis("moveLeft", "moveRight")
 	if direction:
-		face_right = true
+		animator.flip_h = true
+		animator.play("run")
 		#velocity.x = direction * speed
 		velocity.x = move_toward(velocity.x, direction * speed, acceleration)
 	else:
-		face_right = false
+		animator.play("idle")
 		velocity.x = move_toward(velocity.x, 0, acceleration / friction)
 		
-	if face_right == false:
-		print(face_right)
-		$Idle.flip_h = false
-	else:
-		print(face_right)
-		$Idle.flip_h = true
-		
 	
+		
 
 	move_and_slide()
