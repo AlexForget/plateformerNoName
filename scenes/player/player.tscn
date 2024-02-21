@@ -1,18 +1,65 @@
-[gd_scene load_steps=4 format=3 uid="uid://05wx83sodtsq"]
+[gd_scene load_steps=7 format=3 uid="uid://05wx83sodtsq"]
 
 [ext_resource type="Script" path="res://scenes/player/player.gd" id="1_8ahil"]
-[ext_resource type="Texture2D" uid="uid://cn2txqmtm6vwt" path="res://icon.svg" id="2_vdhxa"]
+[ext_resource type="Texture2D" uid="uid://c2345c6kaahsj" path="res://graphics/main characters/Virtual Guy/Idle (32x32).png" id="2_ojoiq"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dsieh"]
-size = Vector2(128, 128)
+size = Vector2(88, 100)
+
+[sub_resource type="Animation" id="Animation_07qxk"]
+resource_name = "IdlePlayer"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Idle:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+}
+
+[sub_resource type="Animation" id="Animation_q057r"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Idle:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [10]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_78png"]
+_data = {
+"IdlePlayer": SubResource("Animation_07qxk"),
+"RESET": SubResource("Animation_q057r")
+}
 
 [node name="Player" type="CharacterBody2D"]
 scale = Vector2(0.25, 0.25)
 collision_mask = 30
 script = ExtResource("1_8ahil")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("2_vdhxa")
-
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 14)
 shape = SubResource("RectangleShape2D_dsieh")
+
+[node name="Idle" type="Sprite2D" parent="."]
+scale = Vector2(4, 4)
+texture = ExtResource("2_ojoiq")
+hframes = 11
+frame = 10
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_78png")
+}
+autoplay = "IdlePlayer"
