@@ -3,9 +3,6 @@
 [ext_resource type="Script" path="res://scenes/player/player.gd" id="1_8ahil"]
 [ext_resource type="Texture2D" uid="uid://c2345c6kaahsj" path="res://graphics/main characters/Virtual Guy/Idle (32x32).png" id="2_ojoiq"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_dsieh"]
-size = Vector2(88, 100)
-
 [sub_resource type="Animation" id="Animation_07qxk"]
 resource_name = "IdlePlayer"
 loop_mode = 1
@@ -43,14 +40,13 @@ _data = {
 "RESET": SubResource("Animation_q057r")
 }
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_acury"]
+size = Vector2(76, 100)
+
 [node name="Player" type="CharacterBody2D"]
 scale = Vector2(0.25, 0.25)
 collision_mask = 30
 script = ExtResource("1_8ahil")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 14)
-shape = SubResource("RectangleShape2D_dsieh")
 
 [node name="Idle" type="Sprite2D" parent="."]
 scale = Vector2(4, 4)
@@ -63,3 +59,7 @@ libraries = {
 "": SubResource("AnimationLibrary_78png")
 }
 autoplay = "IdlePlayer"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(2, 14)
+shape = SubResource("RectangleShape2D_acury")
