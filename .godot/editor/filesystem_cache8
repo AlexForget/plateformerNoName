@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1708548069
+::res://::1708778422
 icon.svg::CompressedTexture2D::5742230089954420331::1708445300::1708447166::1::::<><>::
 Level1.gd::GDScript::-1::1708455192::0::1::::<>Node2D<>::
 ::res://graphics/::1708481163
@@ -11,7 +11,7 @@ Green.png::CompressedTexture2D::3112401277972466017::1708454077::1708457258::1::
 Pink.png::CompressedTexture2D::4933854167195491257::1708454077::1708457258::1::::<><>::
 Purple.png::CompressedTexture2D::3927297406106524487::1708454077::1708457258::1::::<><>::
 Yellow.png::CompressedTexture2D::8030776569678562533::1708454077::1708457258::1::::<><>::
-::res://graphics/main characters/::1708548130
+::res://graphics/main characters/::1708548133
 Appearing (96x96).png::CompressedTexture2D::114803674661583198::1708454077::1708481165::1::::<><>::
 Desappearing (96x96).png::CompressedTexture2D::4657454127553560935::1708454077::1708481165::1::::<><>::
 slime spritesheet calciumtrice.png::CompressedTexture2D::864013436508682451::1708547869::1708548133::1::::<><>::
@@ -50,8 +50,8 @@ Wall Jump (32x32).png::CompressedTexture2D::6486360919088004165::1708454077::170
 ::res://graphics/tilesets/::1708456720
 Terrain (16x16).png::CompressedTexture2D::2650754949302879426::1708454166::1708454172::1::::<><>::
 ::res://scenes/::1708457003
-::res://scenes/levels/::1708548073
-level_1.tscn::PackedScene::599224644718898231::1708548073::0::1::::<><>::res://Level1.gd<>uid://bd1bsua4q18y5::::res://graphics/tilesets/Terrain (16x16).png<>uid://bklw2ah8lj6an::::res://graphics/background/Green.png<>uid://05wx83sodtsq::::res://scenes/player/player.tscn
-::res://scenes/player/::1708548073
-player.gd::GDScript::-1::1708546636::0::1::::<>CharacterBody2D<>::
-player.tscn::PackedScene::1818031048035042936::1708548073::0::1::::<><>::res://scenes/player/player.gd<>uid://bhvuq7onkjbtx::::res://graphics/main characters/Virtual Guy/Fall (32x32).png
+::res://scenes/levels/::1708549410
+level_1.tscn::PackedScene::599224644718898231::1708549410::0::1::::<><>::res://Level1.gd<>uid://bd1bsua4q18y5::::res://graphics/tilesets/Terrain (16x16).png<>uid://bklw2ah8lj6an::::res://graphics/background/Green.png<>uid://05wx83sodtsq::::res://scenes/player/player.tscn
+::res://scenes/player/::1708549477
+player.gd::GDScript::-1::1708549477::0::1::::<>CharacterBody2D<>::
+player.tscn::PackedScene::1818031048035042936::1708549410::0::1::::<><>::res://scenes/player/player.gd<>uid://c2345c6kaahsj::::res://graphics/main characters/Virtual Guy/Idle (32x32).png<>uid://c5t3oqirm0evf::::res://graphics/main characters/Virtual Guy/Run (32x32).png<>uid://bhvuq7onkjbtx::::res://graphics/main characters/Virtual Guy/Fall (32x32).png<>uid://0ke1sapfik46::::res://graphics/main characters/Virtual Guy/Jump (32x32).png<>uid://cvsvt8hopltqb::::res://graphics/main characters/Virtual Guy/Hit (32x32).png

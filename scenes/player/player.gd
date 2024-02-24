@@ -12,33 +12,62 @@ enum state {IDLE, RUN, JUMP, FALL, HIT}
 var anim_state = state.IDLE
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
-var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
+var gravity: float = ProjectSettings.get_setting("physics/2d/default_gravity")
 
 func _ready():
-	animator.play("idle")
+	pass
 
 func _physics_process(delta):
 	# Add the gravity.
 	if not is_on_floor():
 		velocity.y += gravity * delta
+	# Get the input direction and handle the movement/deceleration.
+	var direction: int = Input.get_axis("moveLeft", "moveRight")
 
-	# Handle jump.
+	handle_jump()
+	handle_movement(direction)
+	update_player_state()
+	update_player_animation(direction)
+	move_and_slide()
+
+
+func handle_jump():
 	if Input.is_action_just_pressed("jump") and is_on_floor():
 		velocity.y = jump_velocity
 
-	# Get the input direction and handle the movement/deceleration.
-	# As good practice, you should replace UI actions with custom gameplay actions.
-	var direction = Input.get_axis("moveLeft", "moveRight")
+func handle_movement(direction):
 	if direction:
-		animator.flip_h = true
-		animator.play("run")
 		#velocity.x = direction * speed
 		velocity.x = move_toward(velocity.x, direction * speed, acceleration)
 	else:
-		animator.play("idle")
 		velocity.x = move_toward(velocity.x, 0, acceleration / friction)
-		
-	
-		
 
-	move_and_slide()
+	
+func update_player_state():
+	anim_state = state.IDLE
+	
+	if velocity.x > 0 || velocity.x < 0:
+		anim_state = state.RUN
+		
+	if velocity.y > 0:
+		anim_state = state.FALL
+		
+	if velocity.y < 0:
+		anim_state = state.JUMP
+
+
+func update_player_animation(direction):
+	if direction > 0:
+		animator.flip_h = false
+	elif direction < 0:
+		animator.flip_h = true
+	match anim_state:
+		state.IDLE:
+			animator.play("idle")
+		state.RUN:
+			animator.play("run")
+		state.FALL:
+			animator.play("fall")
+		state.JUMP:
+			animator.play("jump")
+  
