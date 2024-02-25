@@ -6,7 +6,6 @@ extends CharacterBody2D
 @export var jump_velocity : float = -300.0
 @export var acceleration : float = 15.0
 @export var friction : float = 1.25
-var face_right : bool = true
 
 enum state {IDLE, RUN, JUMP, FALL, HIT}
 var anim_state = state.IDLE
