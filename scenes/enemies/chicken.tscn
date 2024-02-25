@@ -1,6 +1,7 @@
-[gd_scene load_steps=38 format=3 uid="uid://og8u1t82u65q"]
+[gd_scene load_steps=39 format=3 uid="uid://og8u1t82u65q"]
 
 [ext_resource type="Texture2D" uid="uid://qrc3j8hv4ml2" path="res://graphics/enemies/Chicken/Hit (32x34).png" id="1_5nun1"]
+[ext_resource type="Script" path="res://scenes/enemies/chicken.gd" id="1_8ojm6"]
 [ext_resource type="Texture2D" uid="uid://kgsgi3mr3663" path="res://graphics/enemies/Chicken/Idle (32x34).png" id="2_q6t87"]
 [ext_resource type="Texture2D" uid="uid://doteh5nfqrols" path="res://graphics/enemies/Chicken/Run (32x34).png" id="3_yu3kn"]
 
@@ -247,16 +248,19 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wf6u2"]
-size = Vector2(26, 30)
+size = Vector2(113, 124)
 
 [node name="Chicken" type="CharacterBody2D"]
+collision_layer = 2
+collision_mask = 17
+script = ExtResource("1_8ojm6")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(4, 4)
 sprite_frames = SubResource("SpriteFrames_4uvq0")
-animation = &"hit"
-frame = 2
-frame_progress = 0.164099
+animation = &"idle"
+frame_progress = 0.00150217
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 1)
+position = Vector2(0.5, 6)
 shape = SubResource("RectangleShape2D_wf6u2")

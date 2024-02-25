@@ -172,7 +172,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"hit",
-"speed": 5.0
+"speed": 15.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -274,4 +274,4 @@ shape = SubResource("RectangleShape2D_acury")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 scale = Vector2(4, 4)
 sprite_frames = SubResource("SpriteFrames_p3nsm")
-animation = &"idle"
+animation = &"fall"
