@@ -21,7 +21,7 @@ func _physics_process(delta):
 	if not is_on_floor():
 		velocity.y += gravity * delta
 	# Get the input direction and handle the movement/deceleration.
-	var direction: int = Input.get_axis("moveLeft", "moveRight")
+	var direction: float = Input.get_axis("moveLeft", "moveRight")
 
 	handle_jump()
 	handle_movement(direction)
@@ -41,6 +41,8 @@ func handle_movement(direction):
 	else:
 		velocity.x = move_toward(velocity.x, 0, acceleration / friction)
 
+func player_is_hit():
+	print('ouch')
 	
 func update_player_state():
 	anim_state = state.IDLE

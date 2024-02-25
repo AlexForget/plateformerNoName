@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1708877154
+::res://::1708885402
 icon.svg::CompressedTexture2D::5742230089954420331::1708445300::1708447166::1::::<><>::
 Level1.gd::GDScript::-1::1708455192::0::1::::<>Node2D<>::
 ::res://graphics/::1708878656
@@ -12,81 +12,81 @@ Pink.png::CompressedTexture2D::4933854167195491257::1708454077::1708457258::1:::
 Purple.png::CompressedTexture2D::3927297406106524487::1708454077::1708457258::1::::<><>::
 Yellow.png::CompressedTexture2D::8030776569678562533::1708454077::1708457258::1::::<><>::
 ::res://graphics/enemies/::1707702754
-::res://graphics/enemies/AngryPig/::1707702754
+::res://graphics/enemies/AngryPig/::1708878658
 Hit 1 (36x30).png::CompressedTexture2D::1408056928832349868::1707702754::1708878658::1::::<><>::
 Hit 2 (36x30).png::CompressedTexture2D::8584571167285787897::1707702754::1708878658::1::::<><>::
 Idle (36x30).png::CompressedTexture2D::1021091241691886972::1707702754::1708878658::1::::<><>::
 Run (36x30).png::CompressedTexture2D::1110345109186416549::1707702754::1708878658::1::::<><>::
 Walk (36x30).png::CompressedTexture2D::6576906554133770024::1707702754::1708878658::1::::<><>::
-::res://graphics/enemies/Bat/::1707702754
+::res://graphics/enemies/Bat/::1708878658
 Ceiling In (46x30).png::CompressedTexture2D::1910665916337828982::1707702754::1708878658::1::::<><>::
 Ceiling Out (46x30).png::CompressedTexture2D::5541479988002659655::1707702754::1708878658::1::::<><>::
 Flying (46x30).png::CompressedTexture2D::7545301068693278352::1707702754::1708878658::1::::<><>::
 Hit (46x30).png::CompressedTexture2D::248213848328406659::1707702754::1708878658::1::::<><>::
 Idle (46x30).png::CompressedTexture2D::8629118216565752998::1707702754::1708878658::1::::<><>::
-::res://graphics/enemies/Bee/::1707702754
+::res://graphics/enemies/Bee/::1708878658
 Attack (36x34).png::CompressedTexture2D::2579653162909258979::1707702754::1708878658::1::::<><>::
 Bullet Pieces.png::CompressedTexture2D::4596949268448862804::1707702754::1708878658::1::::<><>::
 Bullet.png::CompressedTexture2D::7494968798473427512::1707702754::1708878658::1::::<><>::
 Hit (36x34).png::CompressedTexture2D::899865879980710018::1707702754::1708878658::1::::<><>::
 Idle (36x34).png::CompressedTexture2D::2784984780097370712::1707702754::1708878658::1::::<><>::
-::res://graphics/enemies/BlueBird/::1707702754
+::res://graphics/enemies/BlueBird/::1708878658
 Flying (32x32).png::CompressedTexture2D::8140079513674074962::1707702754::1708878658::1::::<><>::
 Hit (32x32).png::CompressedTexture2D::7446739911398098035::1707702754::1708878658::1::::<><>::
-::res://graphics/enemies/Bunny/::1707702754
+::res://graphics/enemies/Bunny/::1708878658
 Fall.png::CompressedTexture2D::3769709977598620142::1707702754::1708878658::1::::<><>::
 Hit (34x44).png::CompressedTexture2D::4539593402641205019::1707702754::1708878658::1::::<><>::
 Idle (34x44).png::CompressedTexture2D::8669008982002458820::1707702754::1708878658::1::::<><>::
 Jump.png::CompressedTexture2D::1886019416598958795::1707702754::1708878658::1::::<><>::
 Run (34x44).png::CompressedTexture2D::1055445499521369636::1707702754::1708878658::1::::<><>::
-::res://graphics/enemies/Chameleon/::1707702754
+::res://graphics/enemies/Chameleon/::1708878658
 Attack (84x38).png::CompressedTexture2D::856984899517286063::1707702754::1708878658::1::::<><>::
 Hit (84x38).png::CompressedTexture2D::2636695573421266333::1707702754::1708878658::1::::<><>::
 Idle (84x38).png::CompressedTexture2D::7709010866145156123::1707702754::1708878658::1::::<><>::
 Run (84x38).png::CompressedTexture2D::412624804535721683::1707702754::1708878658::1::::<><>::
-::res://graphics/enemies/Chicken/::1707702754
+::res://graphics/enemies/Chicken/::1708878658
 Hit (32x34).png::CompressedTexture2D::1158287880278366489::1707702754::1708878658::1::::<><>::
 Idle (32x34).png::CompressedTexture2D::715378787548313254::1707702754::1708878658::1::::<><>::
 Run (32x34).png::CompressedTexture2D::8181386003899497384::1707702754::1708878658::1::::<><>::
-::res://graphics/enemies/Duck/::1707702754
+::res://graphics/enemies/Duck/::1708878658
 Fall (36x36).png::CompressedTexture2D::3444242348375323195::1707702754::1708878658::1::::<><>::
 Hit (36x36).png::CompressedTexture2D::3597018671683927083::1707702754::1708878658::1::::<><>::
 Idle (36x36).png::CompressedTexture2D::2621235814934432392::1707702754::1708878658::1::::<><>::
 Jump (36x36).png::CompressedTexture2D::7370603208338288189::1707702754::1708878658::1::::<><>::
 Jump Anticipation (36x36).png::CompressedTexture2D::4805470117882282058::1707702754::1708878658::1::::<><>::
-::res://graphics/enemies/FatBird/::1707702754
+::res://graphics/enemies/FatBird/::1708878658
 Fall (40x48).png::CompressedTexture2D::1625127210979215769::1707702754::1708878658::1::::<><>::
 Ground (40x48).png::CompressedTexture2D::2033732085918566456::1707702754::1708878658::1::::<><>::
 Hit (40x48).png::CompressedTexture2D::4253246129242723494::1707702754::1708878658::1::::<><>::
 Idle (40x48).png::CompressedTexture2D::2021723829348768089::1707702754::1708878658::1::::<><>::
-::res://graphics/enemies/Ghost/::1707702754
+::res://graphics/enemies/Ghost/::1708878658
 Appear (44x30).png::CompressedTexture2D::893801496034832989::1707702754::1708878658::1::::<><>::
 Desappear (44x30).png::CompressedTexture2D::5828771759113187304::1707702754::1708878658::1::::<><>::
 Gost Particles (48x16).png::CompressedTexture2D::8955075209902367185::1707702754::1708878658::1::::<><>::
 Hit (44x30).png::CompressedTexture2D::8048524081298997049::1707702754::1708878658::1::::<><>::
 Idle (44x30).png::CompressedTexture2D::7439303803502142699::1707702754::1708878658::1::::<><>::
-::res://graphics/enemies/Mushroom/::1707702754
+::res://graphics/enemies/Mushroom/::1708878658
 Hit.png::CompressedTexture2D::3498559121461700755::1707702754::1708878658::1::::<><>::
 Idle (32x32).png::CompressedTexture2D::1272368137322798573::1707702754::1708878658::1::::<><>::
 Run (32x32).png::CompressedTexture2D::526922257545628822::1707702754::1708878658::1::::<><>::
-::res://graphics/enemies/Plant/::1707702754
+::res://graphics/enemies/Plant/::1708878658
 Attack (44x42).png::CompressedTexture2D::7298094743117564737::1707702754::1708878658::1::::<><>::
 Bullet Pieces.png::CompressedTexture2D::2495404781042092326::1707702754::1708878658::1::::<><>::
 Bullet.png::CompressedTexture2D::2880982689889879488::1707702754::1708878658::1::::<><>::
 Hit (44x42).png::CompressedTexture2D::5010009816616903404::1707702754::1708878658::1::::<><>::
 Idle (44x42).png::CompressedTexture2D::2029823610336976629::1707702754::1708878658::1::::<><>::
-::res://graphics/enemies/Radish/::1707702754
+::res://graphics/enemies/Radish/::1708878658
 Hit (30x38).png::CompressedTexture2D::3207964194189504984::1707702754::1708878658::1::::<><>::
 Idle 1 (30x38).png::CompressedTexture2D::272642775700383525::1707702754::1708878658::1::::<><>::
 Idle 2 (30x38).png::CompressedTexture2D::1643789863521530030::1707702754::1708878658::1::::<><>::
 Leafs.png::CompressedTexture2D::896369168644123735::1707702754::1708878658::1::::<><>::
 Run (30x38).png::CompressedTexture2D::2833966705992345223::1707702754::1708878658::1::::<><>::
-::res://graphics/enemies/Rino/::1707702754
+::res://graphics/enemies/Rino/::1708878658
 Hit (52x34).png::CompressedTexture2D::2421633246531462044::1707702754::1708878658::1::::<><>::
 Hit Wall (52x34).png::CompressedTexture2D::9107647820217727676::1707702754::1708878658::1::::<><>::
 Idle (52x34).png::CompressedTexture2D::7513687206752761171::1707702754::1708878658::1::::<><>::
 Run (52x34).png::CompressedTexture2D::7911660842829610870::1707702754::1708878658::1::::<><>::
-::res://graphics/enemies/Rocks/::1707702754
+::res://graphics/enemies/Rocks/::1708878658
 Rock1_Hit.png::CompressedTexture2D::2704241962578618271::1707702754::1708878658::1::::<><>::
 Rock1_Idle (38x34).png::CompressedTexture2D::6143324100849080246::1707702754::1708878658::1::::<><>::
 Rock1_Run (38x34).png::CompressedTexture2D::8229416201729030714::1707702754::1708878658::1::::<><>::
@@ -96,7 +96,7 @@ Rock2_Run (32x28).png::CompressedTexture2D::4505866739737069784::1707702754::170
 Rock3_Hit (22x18).png::CompressedTexture2D::8257523146453944190::1707702754::1708878658::1::::<><>::
 Rock3_Idle (22x18).png::CompressedTexture2D::158259102658767210::1707702754::1708878658::1::::<><>::
 Rock3_Run (22x18).png::CompressedTexture2D::762558830211471686::1707702754::1708878658::1::::<><>::
-::res://graphics/enemies/Skull/::1707702754
+::res://graphics/enemies/Skull/::1708878658
 Hit (52x54).png::CompressedTexture2D::8203603254772502941::1707702754::1708878658::1::::<><>::
 Hit Wall 1 (52x54).png::CompressedTexture2D::5502407967182531338::1707702754::1708878658::1::::<><>::
 Hit Wall 2 (52x54).png::CompressedTexture2D::2111871699214740466::1707702754::1708878658::1::::<><>::
@@ -104,11 +104,11 @@ Idle 1 (52x54).png::CompressedTexture2D::2132404116414850061::1707702754::170887
 Idle 2 (52x54).png::CompressedTexture2D::8402413969703145930::1707702754::1708878658::1::::<><>::
 Orange Particle.png::CompressedTexture2D::9155517463701870024::1707702754::1708878658::1::::<><>::
 Red Particle.png::CompressedTexture2D::7443845733522590061::1707702754::1708878658::1::::<><>::
-::res://graphics/enemies/Slime/::1707702754
+::res://graphics/enemies/Slime/::1708878658
 Hit (44x30).png::CompressedTexture2D::6170550705063677075::1707702754::1708878658::1::::<><>::
 Idle-Run (44x30).png::CompressedTexture2D::1204073632211040528::1707702754::1708878658::1::::<><>::
 Particles (62x16).png::CompressedTexture2D::1000134652135065723::1707702754::1708878658::1::::<><>::
-::res://graphics/enemies/Snail/::1707702754
+::res://graphics/enemies/Snail/::1708878658
 Hit (38x24).png::CompressedTexture2D::7080444725154553759::1707702754::1708878658::1::::<><>::
 Idle (38x24).png::CompressedTexture2D::7081709513552656074::1707702754::1708878658::1::::<><>::
 Shell Idle (38x24).png::CompressedTexture2D::7596755073707666681::1707702754::1708878658::1::::<><>::
@@ -116,14 +116,14 @@ Shell Top Hit (38x24).png::CompressedTexture2D::217479902006402888::1707702754::
 Shell Wall Hit (38x24).png::CompressedTexture2D::4134518105628392168::1707702754::1708878658::1::::<><>::
 Snail without shell.png::CompressedTexture2D::2920545981036504393::1707702754::1708878658::1::::<><>::
 Walk (38x24).png::CompressedTexture2D::3982891979643643650::1707702754::1708878658::1::::<><>::
-::res://graphics/enemies/Trunk/::1707702754
+::res://graphics/enemies/Trunk/::1708878658
 Attack (64x32).png::CompressedTexture2D::8022757830348953995::1707702754::1708878658::1::::<><>::
 Bullet Pieces.png::CompressedTexture2D::5001640081722131730::1707702754::1708878658::1::::<><>::
 Bullet.png::CompressedTexture2D::6299237229298384259::1707702754::1708878658::1::::<><>::
 Hit (64x32).png::CompressedTexture2D::5486263867364062163::1707702754::1708878658::1::::<><>::
 Idle (64x32).png::CompressedTexture2D::6740966415563694723::1707702754::1708878658::1::::<><>::
 Run (64x32).png::CompressedTexture2D::3101518978205333362::1707702754::1708878658::1::::<><>::
-::res://graphics/enemies/Turtle/::1707702754
+::res://graphics/enemies/Turtle/::1708878658
 Hit (44x26).png::CompressedTexture2D::3471986183584037362::1707702754::1708878658::1::::<><>::
 Idle 1 (44x26).png::CompressedTexture2D::6273505318621702819::1707702754::1708878658::1::::<><>::
 Idle 2 (44x26).png::CompressedTexture2D::1236684575271964114::1707702754::1708878658::1::::<><>::
@@ -168,9 +168,11 @@ Wall Jump (32x32).png::CompressedTexture2D::6486360919088004165::1708454077::170
 ::res://graphics/tilesets/::1708456720
 Terrain (16x16).png::CompressedTexture2D::2650754949302879426::1708454166::1708454172::1::::<><>::
 ::res://scenes/::1708877179
-::res://scenes/enemies/::1708877179
-::res://scenes/levels/::1708783195
-level_1.tscn::PackedScene::599224644718898231::1708783195::0::1::::<><>::res://Level1.gd<>uid://bd1bsua4q18y5::::res://graphics/tilesets/Terrain (16x16).png<>uid://bklw2ah8lj6an::::res://graphics/background/Green.png<>uid://05wx83sodtsq::::res://scenes/player/player.tscn
-::res://scenes/player/::1708783195
+::res://scenes/enemies/::1708885031
+chicken.gd::GDScript::-1::1708879696::0::1::::<>CharacterBody2D<>::
+chicken.tscn::PackedScene::997070850590863928::1708885031::0::1::::<><>::uid://qrc3j8hv4ml2::::res://graphics/enemies/Chicken/Hit (32x34).png<>res://scenes/enemies/chicken.gd<>uid://kgsgi3mr3663::::res://graphics/enemies/Chicken/Idle (32x34).png<>uid://doteh5nfqrols::::res://graphics/enemies/Chicken/Run (32x34).png
+::res://scenes/levels/::1708885031
+level_1.tscn::PackedScene::599224644718898231::1708885031::0::1::::<><>::res://Level1.gd<>uid://bd1bsua4q18y5::::res://graphics/tilesets/Terrain (16x16).png<>uid://bklw2ah8lj6an::::res://graphics/background/Green.png<>uid://05wx83sodtsq::::res://scenes/player/player.tscn<>uid://og8u1t82u65q::::res://scenes/enemies/chicken.tscn
+::res://scenes/player/::1708885031
 player.gd::GDScript::-1::1708783195::0::1::::<>CharacterBody2D<>::
-player.tscn::PackedScene::1818031048035042936::1708783106::0::1::::<><>::res://scenes/player/player.gd<>uid://c2345c6kaahsj::::res://graphics/main characters/Virtual Guy/Idle (32x32).png<>uid://c5t3oqirm0evf::::res://graphics/main characters/Virtual Guy/Run (32x32).png<>uid://bhvuq7onkjbtx::::res://graphics/main characters/Virtual Guy/Fall (32x32).png<>uid://0ke1sapfik46::::res://graphics/main characters/Virtual Guy/Jump (32x32).png<>uid://cvsvt8hopltqb::::res://graphics/main characters/Virtual Guy/Hit (32x32).png
+player.tscn::PackedScene::1818031048035042936::1708885031::0::1::::<><>::res://scenes/player/player.gd<>uid://c2345c6kaahsj::::res://graphics/main characters/Virtual Guy/Idle (32x32).png<>uid://c5t3oqirm0evf::::res://graphics/main characters/Virtual Guy/Run (32x32).png<>uid://bhvuq7onkjbtx::::res://graphics/main characters/Virtual Guy/Fall (32x32).png<>uid://0ke1sapfik46::::res://graphics/main characters/Virtual Guy/Jump (32x32).png<>uid://cvsvt8hopltqb::::res://graphics/main characters/Virtual Guy/Hit (32x32).png
