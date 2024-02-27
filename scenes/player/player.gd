@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-@onready var animator = $AnimatedSprite2D
+@onready var animated_sprite = $AnimatedSprite2D
 
 @export var speed : float = 150.0
 @export var jump_velocity : float = -300.0
@@ -59,16 +59,16 @@ func update_player_state():
 
 func update_player_animation(direction):
 	if direction > 0:
-		animator.flip_h = false
+		animated_sprite.flip_h = false
 	elif direction < 0:
-		animator.flip_h = true
+		animated_sprite.flip_h = true
 	match anim_state:
 		state.IDLE:
-			animator.play("idle")
+			animated_sprite.play("idle")
 		state.RUN:
-			animator.play("run")
+			animated_sprite.play("run")
 		state.FALL:
-			animator.play("fall")
+			animated_sprite.play("fall")
 		state.JUMP:
-			animator.play("jump")
+			animated_sprite.play("jump")
   

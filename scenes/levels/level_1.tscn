@@ -630,10 +630,10 @@ layer_1/tile_data = PackedInt32Array(1638401, 393216, 1, 1638402, 458752, 1, 163
 position = Vector2(516, 368)
 
 [node name="Chicken2" parent="." instance=ExtResource("5_6hxme")]
-position = Vector2(248, 239)
+position = Vector2(248, 240)
 
 [node name="Chicken3" parent="." instance=ExtResource("5_6hxme")]
-position = Vector2(339, 415)
+position = Vector2(343, 416)
 
 [node name="Player" parent="." instance=ExtResource("4_7jh33")]
 position = Vector2(119, 328)

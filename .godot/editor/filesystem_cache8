@@ -1,7 +1,7 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1708885402
+::res://::1708994918
 icon.svg::CompressedTexture2D::5742230089954420331::1708445300::1708447166::1::::<><>::
-Level1.gd::GDScript::-1::1708455192::0::1::::<>Node2D<>::
+Level1.gd::GDScript::-1::1708887009::0::1::::<>Node2D<>::
 ::res://graphics/::1708878656
 ::res://graphics/background/::1708457258
 Blue.png::CompressedTexture2D::41259842657103084::1708454077::1708457258::1::::<><>::
@@ -168,11 +168,11 @@ Wall Jump (32x32).png::CompressedTexture2D::6486360919088004165::1708454077::170
 ::res://graphics/tilesets/::1708456720
 Terrain (16x16).png::CompressedTexture2D::2650754949302879426::1708454166::1708454172::1::::<><>::
 ::res://scenes/::1708877179
-::res://scenes/enemies/::1708885031
-chicken.gd::GDScript::-1::1708879696::0::1::::<>CharacterBody2D<>::
-chicken.tscn::PackedScene::997070850590863928::1708885031::0::1::::<><>::uid://qrc3j8hv4ml2::::res://graphics/enemies/Chicken/Hit (32x34).png<>res://scenes/enemies/chicken.gd<>uid://kgsgi3mr3663::::res://graphics/enemies/Chicken/Idle (32x34).png<>uid://doteh5nfqrols::::res://graphics/enemies/Chicken/Run (32x34).png
-::res://scenes/levels/::1708885031
-level_1.tscn::PackedScene::599224644718898231::1708885031::0::1::::<><>::res://Level1.gd<>uid://bd1bsua4q18y5::::res://graphics/tilesets/Terrain (16x16).png<>uid://bklw2ah8lj6an::::res://graphics/background/Green.png<>uid://05wx83sodtsq::::res://scenes/player/player.tscn<>uid://og8u1t82u65q::::res://scenes/enemies/chicken.tscn
-::res://scenes/player/::1708885031
-player.gd::GDScript::-1::1708783195::0::1::::<>CharacterBody2D<>::
-player.tscn::PackedScene::1818031048035042936::1708885031::0::1::::<><>::res://scenes/player/player.gd<>uid://c2345c6kaahsj::::res://graphics/main characters/Virtual Guy/Idle (32x32).png<>uid://c5t3oqirm0evf::::res://graphics/main characters/Virtual Guy/Run (32x32).png<>uid://bhvuq7onkjbtx::::res://graphics/main characters/Virtual Guy/Fall (32x32).png<>uid://0ke1sapfik46::::res://graphics/main characters/Virtual Guy/Jump (32x32).png<>uid://cvsvt8hopltqb::::res://graphics/main characters/Virtual Guy/Hit (32x32).png
+::res://scenes/enemies/::1708888922
+chicken.gd::GDScript::-1::1708888354::0::1::::<>CharacterBody2D<>::
+chicken.tscn::PackedScene::997070850590863928::1708888922::0::1::::<><>::uid://qrc3j8hv4ml2::::res://graphics/enemies/Chicken/Hit (32x34).png<>res://scenes/enemies/chicken.gd<>uid://kgsgi3mr3663::::res://graphics/enemies/Chicken/Idle (32x34).png<>uid://doteh5nfqrols::::res://graphics/enemies/Chicken/Run (32x34).png
+::res://scenes/levels/::1708888922
+level_1.tscn::PackedScene::599224644718898231::1708888922::0::1::::<><>::res://Level1.gd<>uid://bd1bsua4q18y5::::res://graphics/tilesets/Terrain (16x16).png<>uid://bklw2ah8lj6an::::res://graphics/background/Green.png<>uid://05wx83sodtsq::::res://scenes/player/player.tscn<>uid://og8u1t82u65q::::res://scenes/enemies/chicken.tscn
+::res://scenes/player/::1708888922
+player.gd::GDScript::-1::1708887184::0::1::::<>CharacterBody2D<>::
+player.tscn::PackedScene::1818031048035042936::1708888922::0::1::::<><>::res://scenes/player/player.gd<>uid://c2345c6kaahsj::::res://graphics/main characters/Virtual Guy/Idle (32x32).png<>uid://c5t3oqirm0evf::::res://graphics/main characters/Virtual Guy/Run (32x32).png<>uid://bhvuq7onkjbtx::::res://graphics/main characters/Virtual Guy/Fall (32x32).png<>uid://0ke1sapfik46::::res://graphics/main characters/Virtual Guy/Jump (32x32).png<>uid://cvsvt8hopltqb::::res://graphics/main characters/Virtual Guy/Hit (32x32).png
