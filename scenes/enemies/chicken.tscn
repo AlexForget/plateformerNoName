@@ -1,4 +1,4 @@
-[gd_scene load_steps=53 format=3 uid="uid://og8u1t82u65q"]
+[gd_scene load_steps=54 format=3 uid="uid://og8u1t82u65q"]
 
 [ext_resource type="Texture2D" uid="uid://qrc3j8hv4ml2" path="res://graphics/enemies/Chicken/Hit (32x34).png" id="1_5nun1"]
 [ext_resource type="Script" path="res://scenes/enemies/chicken.gd" id="1_8ojm6"]
@@ -353,6 +353,9 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wf6u2"]
 size = Vector2(27, 27)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rdy1v"]
+size = Vector2(27, 23)
+
 [node name="Chicken" type="CharacterBody2D" groups=["Enemy"]]
 collision_layer = 2
 collision_mask = 18
@@ -360,7 +363,7 @@ script = ExtResource("1_8ojm6")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_4uvq0")
-animation = &"hit"
+animation = &"idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-0.5, 1.5)
@@ -370,3 +373,11 @@ shape = SubResource("RectangleShape2D_wf6u2")
 position = Vector2(-13, 0)
 target_position = Vector2(0, 21)
 collision_mask = 16
+
+[node name="Hitbox" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox"]
+position = Vector2(-0.5, 3.5)
+shape = SubResource("RectangleShape2D_rdy1v")
+
+[connection signal="body_entered" from="Hitbox" to="." method="_on_hitbox_body_entered"]

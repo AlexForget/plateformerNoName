@@ -1,7 +1,8 @@
-[gd_scene load_steps=42 format=3 uid="uid://05wx83sodtsq"]
+[gd_scene load_steps=50 format=3 uid="uid://05wx83sodtsq"]
 
 [ext_resource type="Script" path="res://scenes/player/player.gd" id="1_8ahil"]
 [ext_resource type="Texture2D" uid="uid://c2345c6kaahsj" path="res://graphics/main characters/Virtual Guy/Idle (32x32).png" id="2_ojoiq"]
+[ext_resource type="Texture2D" uid="uid://b7mdua51jvcv4" path="res://graphics/main characters/Desappearing (96x96).png" id="2_y8yw2"]
 [ext_resource type="Texture2D" uid="uid://c5t3oqirm0evf" path="res://graphics/main characters/Virtual Guy/Run (32x32).png" id="3_dh7hi"]
 [ext_resource type="Texture2D" uid="uid://bhvuq7onkjbtx" path="res://graphics/main characters/Virtual Guy/Fall (32x32).png" id="4_wn3xt"]
 [ext_resource type="Texture2D" uid="uid://0ke1sapfik46" path="res://graphics/main characters/Virtual Guy/Jump (32x32).png" id="5_lf7se"]
@@ -9,6 +10,34 @@
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_acury"]
 size = Vector2(76, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q8leu"]
+atlas = ExtResource("2_y8yw2")
+region = Rect2(0, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nv20w"]
+atlas = ExtResource("2_y8yw2")
+region = Rect2(96, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e8ey6"]
+atlas = ExtResource("2_y8yw2")
+region = Rect2(192, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j4x0i"]
+atlas = ExtResource("2_y8yw2")
+region = Rect2(288, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nmkej"]
+atlas = ExtResource("2_y8yw2")
+region = Rect2(384, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dn2nv"]
+atlas = ExtResource("2_y8yw2")
+region = Rect2(480, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cki06"]
+atlas = ExtResource("2_y8yw2")
+region = Rect2(576, 0, 96, 96)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_vfta5"]
 atlas = ExtResource("4_wn3xt")
@@ -142,6 +171,32 @@ region = Rect2(352, 0, 32, 32)
 animations = [{
 "frames": [{
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_q8leu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nv20w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e8ey6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j4x0i")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nmkej")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dn2nv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cki06")
+}],
+"loop": false,
+"name": &"dessapear",
+"speed": 15.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_vfta5")
 }],
 "loop": true,
@@ -170,7 +225,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_alhsw")
 }],
-"loop": true,
+"loop": false,
 "name": &"hit",
 "speed": 15.0
 }, {
@@ -277,7 +332,7 @@ shape = SubResource("RectangleShape2D_acury")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 scale = Vector2(4, 4)
 sprite_frames = SubResource("SpriteFrames_p3nsm")
-animation = &"fall"
+animation = &"idle"
 
 [node name="Hitbox" type="Area2D" parent="."]
 collision_mask = 2

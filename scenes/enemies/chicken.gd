@@ -54,9 +54,12 @@ func update_chicken_animation():
 			animator.play("hit")
 
 
-func chicken_kill():
+func chicken_get_hit():
 	is_death = true
 	animator.play("hit")
 	animator.animation_finished.connect(queue_free)
 
 
+func _on_hitbox_body_entered(body):
+	if body.is_in_group("Player"):
+		body.player_get_hit(self)

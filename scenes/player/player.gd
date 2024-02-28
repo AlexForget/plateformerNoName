@@ -5,8 +5,13 @@ extends CharacterBody2D
 @export var speed : float = 150.0
 @export var jump_velocity : float = -300.0
 @export var bounce_velocity : float = -200.0
+@export var push_back_velocity_x : float = 250
+@export var push_back_velocity : Vector2 = Vector2(push_back_velocity_x,-150)
 @export var acceleration : float = 15.0
 @export var friction : float = 1.25
+
+var health: int = 3
+var is_immune: bool = false
 
 enum state {IDLE, RUN, JUMP, FALL, HIT}
 var anim_state = state.IDLE
@@ -37,45 +42,72 @@ func handle_jump():
 
 func handle_movement(direction):
 	if direction:
-		#velocity.x = direction * speed
 		velocity.x = move_toward(velocity.x, direction * speed, acceleration)
 	else:
 		velocity.x = move_toward(velocity.x, 0, acceleration / friction)
 
-func player_is_hit():
-	print('ouch')
 	
 func update_player_state():
-	anim_state = state.IDLE
-	
-	if velocity.x > 0 || velocity.x < 0:
-		anim_state = state.RUN
+	if !is_immune:
+		anim_state = state.IDLE
 		
-	if velocity.y > 0:
-		anim_state = state.FALL
-		
-	if velocity.y < 0:
-		anim_state = state.JUMP
+		if velocity.x > 0 || velocity.x < 0:
+			anim_state = state.RUN
+			
+		if velocity.y > 0:
+			anim_state = state.FALL
+			
+		if velocity.y < 0:
+			anim_state = state.JUMP
 
 
 func update_player_animation(direction):
 	if direction > 0:
-		animated_sprite.flip_h = false
+			animated_sprite.flip_h = false
 	elif direction < 0:
 		animated_sprite.flip_h = true
-	match anim_state:
-		state.IDLE:
-			animated_sprite.play("idle")
-		state.RUN:
-			animated_sprite.play("run")
-		state.FALL:
-			animated_sprite.play("fall")
-		state.JUMP:
-			animated_sprite.play("jump")
+	if !is_immune:
+		match anim_state:
+			state.IDLE:
+				animated_sprite.play("idle")
+			state.RUN:
+				animated_sprite.play("run")
+			state.FALL:
+				animated_sprite.play("fall")
+			state.JUMP:
+				animated_sprite.play("jump")
   
-
 
 func _on_hitbox_body_entered(body):
 	if body.is_in_group("Enemy") && velocity.y > 0.01:
-		body.chicken_kill()
+		body.chicken_get_hit()
 		velocity.y = bounce_velocity
+
+
+func player_get_hit(enemy_body):
+	if !is_immune:
+		health = health - 1
+		manage_push_back(enemy_body)
+		is_immune = true
+		
+	if health <= 0:
+		animated_sprite.play("dessapear")
+		await animated_sprite.animation_finished
+		queue_free()
+	else :
+		animated_sprite.play("hit")
+		await animated_sprite.animation_finished
+		is_immune = false
+
+
+func manage_push_back(enemy_body):
+	if enemy_body.velocity.x < 0 && velocity.x < 0:
+		push_back_velocity.x = push_back_velocity_x
+	elif enemy_body.velocity.x < 0 && velocity.x == 0:
+		push_back_velocity.x = -push_back_velocity_x
+	elif enemy_body.velocity.x < 0 && velocity.x > 0:
+		push_back_velocity.x = -push_back_velocity_x
+	elif enemy_body.velocity.x > 0 && velocity.x > 0:
+		push_back_velocity.x = -push_back_velocity_x
+	velocity = push_back_velocity
+
