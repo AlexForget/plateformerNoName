@@ -1,4 +1,4 @@
-[gd_scene load_steps=41 format=3 uid="uid://05wx83sodtsq"]
+[gd_scene load_steps=42 format=3 uid="uid://05wx83sodtsq"]
 
 [ext_resource type="Script" path="res://scenes/player/player.gd" id="1_8ahil"]
 [ext_resource type="Texture2D" uid="uid://c2345c6kaahsj" path="res://graphics/main characters/Virtual Guy/Idle (32x32).png" id="2_ojoiq"]
@@ -262,9 +262,12 @@ animations = [{
 "speed": 15.0
 }]
 
-[node name="Player" type="CharacterBody2D"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jc5v4"]
+size = Vector2(76, 4)
+
+[node name="Player" type="CharacterBody2D" groups=["Player"]]
 scale = Vector2(0.25, 0.25)
-collision_mask = 30
+collision_mask = 28
 script = ExtResource("1_8ahil")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -275,3 +278,12 @@ shape = SubResource("RectangleShape2D_acury")
 scale = Vector2(4, 4)
 sprite_frames = SubResource("SpriteFrames_p3nsm")
 animation = &"fall"
+
+[node name="Hitbox" type="Area2D" parent="."]
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox"]
+position = Vector2(2, 58)
+shape = SubResource("RectangleShape2D_jc5v4")
+
+[connection signal="body_entered" from="Hitbox" to="." method="_on_hitbox_body_entered"]

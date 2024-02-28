@@ -4,6 +4,7 @@ extends CharacterBody2D
 
 @export var speed : float = 150.0
 @export var jump_velocity : float = -300.0
+@export var bounce_velocity : float = -200.0
 @export var acceleration : float = 15.0
 @export var friction : float = 1.25
 
@@ -72,3 +73,9 @@ func update_player_animation(direction):
 		state.JUMP:
 			animated_sprite.play("jump")
   
+
+
+func _on_hitbox_body_entered(body):
+	if body.is_in_group("Enemy") && velocity.y > 0.01:
+		body.chicken_kill()
+		velocity.y = bounce_velocity

@@ -7,6 +7,7 @@ const speed = 75.0
 enum state {IDLE, RUN, HIT}
 var anim_state = state.IDLE
 var direction: int = -1
+var is_death: bool = false
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
@@ -16,14 +17,16 @@ func _physics_process(delta):
 	# Add the gravity.
 	if not is_on_floor():
 		velocity.y += gravity * delta
-	if is_on_wall():
-		change_direction()
-	if !$RayCast2D.is_colliding() && is_on_floor():
-		change_direction()
-	handle_movement()
-	update_chicken_state()
-	update_chicken_animation()
-	move_and_slide()
+		
+	if !is_death:
+		if is_on_wall():
+			change_direction()
+		if !$RayCast2D.is_colliding() && is_on_floor():
+			change_direction()
+		handle_movement()
+		update_chicken_state()
+		update_chicken_animation()
+		move_and_slide()
 
 
 func change_direction():
@@ -35,9 +38,10 @@ func handle_movement():
 
 
 func update_chicken_state():
-	anim_state = state.IDLE
-	if velocity.x > 0 || velocity.x < 0:
-		anim_state = state.RUN
+	if anim_state != state.HIT:
+		anim_state = state.IDLE
+		if velocity.x > 0 || velocity.x < 0:
+			anim_state = state.RUN
 
 
 func update_chicken_animation():
@@ -46,3 +50,13 @@ func update_chicken_animation():
 			animator.play("idle")
 		state.RUN:
 			animator.play("walk")
+		state.HIT:
+			animator.play("hit")
+
+
+func chicken_kill():
+	is_death = true
+	animator.play("hit")
+	animator.animation_finished.connect(queue_free)
+
+
