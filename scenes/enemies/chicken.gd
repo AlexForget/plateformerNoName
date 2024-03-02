@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 @onready var animator = $AnimatedSprite2D
 
-const speed = 75.0
+var speed : float = 75.0
 
 enum state {IDLE, RUN, HIT}
 var anim_state = state.IDLE

@@ -2,16 +2,15 @@ extends CharacterBody2D
 
 @onready var animated_sprite = $AnimatedSprite2D
 
-@export var speed : float = 150.0
-@export var jump_velocity : float = -300.0
-@export var bounce_velocity : float = -200.0
-@export var push_back_velocity_x : float = 250
-@export var push_back_velocity : Vector2 = Vector2(push_back_velocity_x,-150)
-@export var acceleration : float = 15.0
-@export var friction : float = 1.25
-
 var health: int = 3
+var speed : float = 150.0
+var jump_velocity : float = -300.0
+var bounce_velocity : float = -200.0
+var push_back_velocity_x : float = 250
+var acceleration : float = 15.0
+var friction : float = 1.25
 var is_immune: bool = false
+var push_back_velocity : Vector2 = Vector2(push_back_velocity_x,-150)
 
 enum state {IDLE, RUN, JUMP, FALL, HIT}
 var anim_state = state.IDLE
@@ -35,7 +34,7 @@ func _physics_process(delta):
 	update_player_animation(direction)
 	move_and_slide()
 
-
+var i: int = 1
 func handle_jump():
 	if Input.is_action_just_pressed("jump") and is_on_floor():
 		velocity.y = jump_velocity
