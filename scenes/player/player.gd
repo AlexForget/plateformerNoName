@@ -6,11 +6,11 @@ var health: int = 3
 var speed : float = 150.0
 var jump_velocity : float = -300.0
 var bounce_velocity : float = -200.0
-var push_back_velocity_x : float = 250
+var horizontal_push_back_velocity : float = 250
 var acceleration : float = 15.0
 var friction : float = 1.25
 var is_immune: bool = false
-var push_back_velocity : Vector2 = Vector2(push_back_velocity_x,-150)
+var push_back_velocity : Vector2 = Vector2(horizontal_push_back_velocity,-150)
 
 enum state {IDLE, RUN, JUMP, FALL, HIT}
 var anim_state = state.IDLE
@@ -79,7 +79,7 @@ func update_player_animation(direction):
 
 func _on_hitbox_body_entered(body):
 	if body.is_in_group("Enemy") && velocity.y > 0.01:
-		body.chicken_get_hit()
+		body.get_hit()
 		velocity.y = bounce_velocity
 
 
@@ -101,12 +101,12 @@ func player_get_hit(enemy_body):
 
 func manage_push_back(enemy_body):
 	if enemy_body.velocity.x < 0 && velocity.x < 0:
-		push_back_velocity.x = push_back_velocity_x
+		push_back_velocity.x = horizontal_push_back_velocity
 	elif enemy_body.velocity.x < 0 && velocity.x == 0:
-		push_back_velocity.x = -push_back_velocity_x
+		push_back_velocity.x = -horizontal_push_back_velocity
 	elif enemy_body.velocity.x < 0 && velocity.x > 0:
-		push_back_velocity.x = -push_back_velocity_x
+		push_back_velocity.x = -horizontal_push_back_velocity
 	elif enemy_body.velocity.x > 0 && velocity.x > 0:
-		push_back_velocity.x = -push_back_velocity_x
+		push_back_velocity.x = -horizontal_push_back_velocity
 	velocity = push_back_velocity
 

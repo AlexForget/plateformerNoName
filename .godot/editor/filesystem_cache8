@@ -1,7 +1,7 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1709472591
+::res://::1709555501
 icon.svg::CompressedTexture2D::5742230089954420331::1708445300::1708447166::1::::<><>::
-Level1.gd::GDScript::-1::1708887009::0::1::::<>Node2D<>::
+Level1.gd::GDScript::-1::1709474022::0::1::::<>Node2D<>::
 ::res://graphics/::1709468734
 ::res://graphics/background/::1708457258
 Blue.png::CompressedTexture2D::41259842657103084::1708454077::1708457258::1::::<><>::
@@ -225,13 +225,13 @@ Idle.png::CompressedTexture2D::4042453523405104372::1708454078::1709468801::1:::
 Idle.png::CompressedTexture2D::1068606834451226823::1708454078::1709468801::1::::<><>::
 Jump (28x28).png::CompressedTexture2D::2962629425551390279::1708454078::1709468801::1::::<><>::
 ::res://scenes/::1708877179
-::res://scenes/enemies/::1709472348
+::res://scenes/enemies/::1709473960
 chicken.gd::GDScript::-1::1709211746::0::1::::<>CharacterBody2D<>::
-chicken.tscn::PackedScene::997070850590863928::1709472348::0::1::::<><>::uid://qrc3j8hv4ml2::::res://graphics/enemies/Chicken/Hit (32x34).png<>res://scenes/enemies/chicken.gd<>uid://kgsgi3mr3663::::res://graphics/enemies/Chicken/Idle (32x34).png<>uid://doteh5nfqrols::::res://graphics/enemies/Chicken/Run (32x34).png
-saw.gd::GDScript::-1::1709472036::0::1::::<>CharacterBody2D<>::
-saw.tscn::PackedScene::6734886412858540040::1709472348::0::1::::<><>::res://scenes/enemies/saw.gd<>uid://bxagqs5o4nbf3::::res://graphics/Traps/Saw/On (38x38).png
-::res://scenes/levels/::1709472348
-level_1.tscn::PackedScene::599224644718898231::1709472348::0::1::::<><>::res://Level1.gd<>uid://bd1bsua4q18y5::::res://graphics/tilesets/Terrain (16x16).png<>uid://bklw2ah8lj6an::::res://graphics/background/Green.png<>uid://05wx83sodtsq::::res://scenes/player/player.tscn<>uid://og8u1t82u65q::::res://scenes/enemies/chicken.tscn<>uid://c27ouidlni2g7::::res://scenes/enemies/saw.tscn
-::res://scenes/player/::1709472348
+chicken.tscn::PackedScene::997070850590863928::1709473960::0::1::::<><>::uid://qrc3j8hv4ml2::::res://graphics/enemies/Chicken/Hit (32x34).png<>res://scenes/enemies/chicken.gd<>uid://kgsgi3mr3663::::res://graphics/enemies/Chicken/Idle (32x34).png<>uid://doteh5nfqrols::::res://graphics/enemies/Chicken/Run (32x34).png
+saw.gd::GDScript::-1::1709473054::0::1::::<>CharacterBody2D<>::
+saw.tscn::PackedScene::6734886412858540040::1709473960::0::1::::<><>::res://scenes/enemies/saw.gd<>uid://bxagqs5o4nbf3::::res://graphics/Traps/Saw/On (38x38).png
+::res://scenes/levels/::1709473960
+level_1.tscn::PackedScene::599224644718898231::1709473960::0::1::::<><>::res://Level1.gd<>uid://bd1bsua4q18y5::::res://graphics/tilesets/Terrain (16x16).png<>uid://bklw2ah8lj6an::::res://graphics/background/Green.png<>uid://05wx83sodtsq::::res://scenes/player/player.tscn<>uid://og8u1t82u65q::::res://scenes/enemies/chicken.tscn<>uid://c27ouidlni2g7::::res://scenes/enemies/saw.tscn
+::res://scenes/player/::1709473959
 player.gd::GDScript::-1::1709213070::0::1::::<>CharacterBody2D<>::
-player.tscn::PackedScene::1818031048035042936::1709472348::0::1::::<><>::res://scenes/player/player.gd<>uid://c2345c6kaahsj::::res://graphics/main characters/Virtual Guy/Idle (32x32).png<>uid://b7mdua51jvcv4::::res://graphics/main characters/Desappearing (96x96).png<>uid://c5t3oqirm0evf::::res://graphics/main characters/Virtual Guy/Run (32x32).png<>uid://bhvuq7onkjbtx::::res://graphics/main characters/Virtual Guy/Fall (32x32).png<>uid://0ke1sapfik46::::res://graphics/main characters/Virtual Guy/Jump (32x32).png<>uid://cvsvt8hopltqb::::res://graphics/main characters/Virtual Guy/Hit (32x32).png
+player.tscn::PackedScene::1818031048035042936::1709473959::0::1::::<><>::res://scenes/player/player.gd<>uid://c2345c6kaahsj::::res://graphics/main characters/Virtual Guy/Idle (32x32).png<>uid://b7mdua51jvcv4::::res://graphics/main characters/Desappearing (96x96).png<>uid://c5t3oqirm0evf::::res://graphics/main characters/Virtual Guy/Run (32x32).png<>uid://bhvuq7onkjbtx::::res://graphics/main characters/Virtual Guy/Fall (32x32).png<>uid://0ke1sapfik46::::res://graphics/main characters/Virtual Guy/Jump (32x32).png<>uid://cvsvt8hopltqb::::res://graphics/main characters/Virtual Guy/Hit (32x32).png

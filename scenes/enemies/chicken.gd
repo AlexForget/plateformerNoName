@@ -54,7 +54,7 @@ func update_chicken_animation():
 			animator.play("hit")
 
 
-func chicken_get_hit():
+func get_hit():
 	is_death = true
 	animator.play("hit")
 	animator.animation_finished.connect(queue_free)

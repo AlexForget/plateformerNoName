@@ -642,16 +642,9 @@ position = Vector2(38, 174)
 position = Vector2(-251, 174)
 
 [node name="Saw" parent="Enemies" instance=ExtResource("6_auvwd")]
-position = Vector2(0, -138)
+position = Vector2(-39, -157)
 mouvement_direction = 0
-speed = 200.0
-marker_movement_return_position = Vector2(300, 0)
-
-[node name="Saw2" parent="Enemies" instance=ExtResource("6_auvwd")]
-position = Vector2(-246, -36)
-mouvement_direction = 1
-speed = 200.0
-
-[node name="Saw3" parent="Enemies" instance=ExtResource("6_auvwd")]
-position = Vector2(-110, 141)
-speed = 200.0
+speed = 50.0
+initial_direction = true
+return_position = Vector2(300, 0)
+distance = 100

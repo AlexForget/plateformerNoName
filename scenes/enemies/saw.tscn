@@ -94,5 +94,3 @@ shape = SubResource("CircleShape2D_b3n11")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox" groups=["Enemy"]]
 shape = SubResource("CircleShape2D_ln5qr")
 debug_color = Color(0.796078, 0.380392, 0.498039, 0.419608)
-
-[node name="Marker2D" type="Marker2D" parent="."]
