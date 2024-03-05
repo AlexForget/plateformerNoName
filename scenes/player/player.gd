@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 @onready var animated_sprite = $AnimatedSprite2D
 
-var health: int = 3
+var health: int = 30
 var speed : float = 150.0
 var jump_velocity : float = -300.0
 var bounce_velocity : float = -200.0
@@ -100,6 +100,13 @@ func player_get_hit(enemy_body):
 
 
 func manage_push_back(enemy_body):
+	if enemy_body.global_position.x > global_position.x:
+		push_back_velocity.x = -horizontal_push_back_velocity
+	elif enemy_body.global_position.x < global_position.x:
+		push_back_velocity.x = horizontal_push_back_velocity
+	velocity = push_back_velocity
+
+func enemy_pushback(enemy_body):
 	if enemy_body.velocity.x < 0 && velocity.x < 0:
 		push_back_velocity.x = horizontal_push_back_velocity
 	elif enemy_body.velocity.x < 0 && velocity.x == 0:
@@ -110,3 +117,11 @@ func manage_push_back(enemy_body):
 		push_back_velocity.x = -horizontal_push_back_velocity
 	velocity = push_back_velocity
 
+func obstacle_pushback(enemy_body):
+	print("enemy : ", enemy_body.global_position.x)
+	print("player : ", global_position.x)
+	if enemy_body.global_position.x > global_position.x:
+		push_back_velocity.x = -horizontal_push_back_velocity
+	elif enemy_body.global_position.x < global_position.x:
+		push_back_velocity.x = horizontal_push_back_velocity
+	velocity = push_back_velocity
