@@ -17,4 +17,5 @@ func _process(_delta):
 func _on_collected_collectable():
 	remaining_collectables -= 1
 	if remaining_collectables == 0:
+		$Goal.open_flag()
 		print("level finish")

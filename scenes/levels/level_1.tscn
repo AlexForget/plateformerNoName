@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://isje3s7mufnj"]
+[gd_scene load_steps=12 format=3 uid="uid://isje3s7mufnj"]
 
 [ext_resource type="Script" path="res://Level1.gd" id="1_cpvdu"]
 [ext_resource type="Texture2D" uid="uid://bd1bsua4q18y5" path="res://graphics/tilesets/Terrain (16x16).png" id="2_pubu3"]
@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://og8u1t82u65q" path="res://scenes/enemies/chicken.tscn" id="5_6hxme"]
 [ext_resource type="PackedScene" uid="uid://c27ouidlni2g7" path="res://scenes/enemies/saw.tscn" id="6_auvwd"]
 [ext_resource type="PackedScene" uid="uid://cimrlxofws51n" path="res://scenes/items/fruits.tscn" id="7_ildt7"]
+[ext_resource type="PackedScene" uid="uid://b4sfx4i06aulc" path="res://scenes/items/goal.tscn" id="8_axlqc"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_useop"]
 resource_name = "Terrain"
@@ -689,3 +690,6 @@ chosen_animation = "banana"
 [node name="Fruits8" parent="Collectables" instance=ExtResource("7_ildt7")]
 position = Vector2(319, 416)
 chosen_animation = "orange"
+
+[node name="Goal" parent="." instance=ExtResource("8_axlqc")]
+position = Vector2(730, 352)

@@ -1,5 +1,8 @@
-res://graphics/Items/Fruits
 res://scenes/items
+res://graphics/Items/Checkpoints/Checkpoint
+res://graphics/Items/Checkpoints/End
+res://graphics/Items/Checkpoints/Start
+res://graphics/Items/Fruits
 res://graphics/Traps/Saw
 res://scenes/enemies
 res://graphics/main characters
