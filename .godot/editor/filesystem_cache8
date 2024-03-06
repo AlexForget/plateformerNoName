@@ -1,8 +1,8 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1709603727
+::res://::1709691281
 icon.svg::CompressedTexture2D::5742230089954420331::1708445300::1708447166::1::::<><>::
 Level1.gd::GDScript::-1::1709559308::0::1::::<>Node2D<>::
-::res://graphics/::1709468734
+::res://graphics/::1709691326
 ::res://graphics/background/::1708457258
 Blue.png::CompressedTexture2D::41259842657103084::1708454077::1708457258::1::::<><>::
 Brown.png::CompressedTexture2D::7447880107455333009::1708454077::1708457258::1::::<><>::
@@ -129,6 +129,41 @@ Idle 1 (44x26).png::CompressedTexture2D::6273505318621702819::1707702754::170887
 Idle 2 (44x26).png::CompressedTexture2D::1236684575271964114::1707702754::1708878658::1::::<><>::
 Spikes in (44x26).png::CompressedTexture2D::6446796935040644158::1707702754::1708878658::1::::<><>::
 Spikes out (44x26).png::CompressedTexture2D::2989226557162071306::1707702754::1708878658::1::::<><>::
+::res://graphics/Items/::1708454077
+::res://graphics/Items/Boxes/::1708454077
+::res://graphics/Items/Boxes/Box1/::1708454077
+Break.png::CompressedTexture2D::2256179672022538643::1708454077::1709691328::1::::<><>::
+Hit (28x24).png::CompressedTexture2D::5461915061032672042::1708454077::1709691328::1::::<><>::
+Idle.png::CompressedTexture2D::8945093922626855912::1708454077::1709691328::1::::<><>::
+::res://graphics/Items/Boxes/Box2/::1708454077
+Break.png::CompressedTexture2D::7409386902906316277::1708454077::1709691328::1::::<><>::
+Hit (28x24).png::CompressedTexture2D::199265358283577566::1708454077::1709691328::1::::<><>::
+Idle.png::CompressedTexture2D::1323468504641353498::1708454077::1709691328::1::::<><>::
+::res://graphics/Items/Boxes/Box3/::1708454077
+Break.png::CompressedTexture2D::8895754233917079733::1708454077::1709691328::1::::<><>::
+Hit (28x24).png::CompressedTexture2D::1318198495764904446::1708454077::1709691328::1::::<><>::
+Idle.png::CompressedTexture2D::4585014649418473616::1708454077::1709691328::1::::<><>::
+::res://graphics/Items/Checkpoints/::1708454077
+::res://graphics/Items/Checkpoints/Checkpoint/::1708454077
+Checkpoint (Flag Idle)(64x64).png::CompressedTexture2D::5893725529973150634::1708454077::1709691328::1::::<><>::
+Checkpoint (Flag Out) (64x64).png::CompressedTexture2D::315378399289122893::1708454077::1709691328::1::::<><>::
+Checkpoint (No Flag).png::CompressedTexture2D::5419528133327438602::1708454077::1709691328::1::::<><>::
+::res://graphics/Items/Checkpoints/End/::1708454077
+End (Idle).png::CompressedTexture2D::9107294137580452381::1708454077::1709691328::1::::<><>::
+End (Pressed) (64x64).png::CompressedTexture2D::6945099033125787299::1708454077::1709691328::1::::<><>::
+::res://graphics/Items/Checkpoints/Start/::1708454077
+Start (Idle).png::CompressedTexture2D::3564401537853320416::1708454077::1709691328::1::::<><>::
+Start (Moving) (64x64).png::CompressedTexture2D::2423120439046016898::1708454077::1709691328::1::::<><>::
+::res://graphics/Items/Fruits/::1708454077
+Apple.png::CompressedTexture2D::836183787453138847::1708454077::1709691328::1::::<><>::
+Bananas.png::CompressedTexture2D::5325819857311166351::1708454077::1709691328::1::::<><>::
+Cherries.png::CompressedTexture2D::7411489602621824148::1708454077::1709691328::1::::<><>::
+Collected.png::CompressedTexture2D::4973239475811155650::1708454077::1709691328::1::::<><>::
+Kiwi.png::CompressedTexture2D::4990360092867524197::1708454077::1709691328::1::::<><>::
+Melon.png::CompressedTexture2D::889259151953403740::1708454077::1709691328::1::::<><>::
+Orange.png::CompressedTexture2D::5645759095528391151::1708454077::1709691328::1::::<><>::
+Pineapple.png::CompressedTexture2D::1319066706542934808::1708454077::1709691328::1::::<><>::
+Strawberry.png::CompressedTexture2D::8887561141770302871::1708454077::1709691328::1::::<><>::
 ::res://graphics/main characters/::1708548133
 Appearing (96x96).png::CompressedTexture2D::114803674661583198::1708454077::1708481165::1::::<><>::
 Desappearing (96x96).png::CompressedTexture2D::4657454127553560935::1708454077::1708481165::1::::<><>::
@@ -224,14 +259,16 @@ Idle.png::CompressedTexture2D::4042453523405104372::1708454078::1709468801::1:::
 ::res://graphics/Traps/Trampoline/::1709468801
 Idle.png::CompressedTexture2D::1068606834451226823::1708454078::1709468801::1::::<><>::
 Jump (28x28).png::CompressedTexture2D::2962629425551390279::1708454078::1709468801::1::::<><>::
-::res://scenes/::1708877179
-::res://scenes/enemies/::1709559539
+::res://scenes/::1709691270
+::res://scenes/enemies/::1709606381
 chicken.gd::GDScript::-1::1709555721::0::1::::<>CharacterBody2D<>::
-chicken.tscn::PackedScene::997070850590863928::1709559512::0::1::::<><>::uid://qrc3j8hv4ml2::::res://graphics/enemies/Chicken/Hit (32x34).png<>res://scenes/enemies/chicken.gd<>uid://kgsgi3mr3663::::res://graphics/enemies/Chicken/Idle (32x34).png<>uid://doteh5nfqrols::::res://graphics/enemies/Chicken/Run (32x34).png
-saw.gd::GDScript::-1::1709559512::0::1::::<>CharacterBody2D<>::
-saw.tscn::PackedScene::6734886412858540040::1709559539::0::1::::<><>::res://scenes/enemies/saw.gd<>uid://bxagqs5o4nbf3::::res://graphics/Traps/Saw/On (38x38).png
-::res://scenes/levels/::1709559512
-level_1.tscn::PackedScene::599224644718898231::1709559512::0::1::::<><>::res://Level1.gd<>uid://bd1bsua4q18y5::::res://graphics/tilesets/Terrain (16x16).png<>uid://bklw2ah8lj6an::::res://graphics/background/Green.png<>uid://05wx83sodtsq::::res://scenes/player/player.tscn<>uid://og8u1t82u65q::::res://scenes/enemies/chicken.tscn<>uid://c27ouidlni2g7::::res://scenes/enemies/saw.tscn
-::res://scenes/player/::1709559512
-player.gd::GDScript::-1::1709555836::0::1::::<>CharacterBody2D<>::
-player.tscn::PackedScene::1818031048035042936::1709559512::0::1::::<><>::res://scenes/player/player.gd<>uid://c2345c6kaahsj::::res://graphics/main characters/Virtual Guy/Idle (32x32).png<>uid://b7mdua51jvcv4::::res://graphics/main characters/Desappearing (96x96).png<>uid://c5t3oqirm0evf::::res://graphics/main characters/Virtual Guy/Run (32x32).png<>uid://bhvuq7onkjbtx::::res://graphics/main characters/Virtual Guy/Fall (32x32).png<>uid://0ke1sapfik46::::res://graphics/main characters/Virtual Guy/Jump (32x32).png<>uid://cvsvt8hopltqb::::res://graphics/main characters/Virtual Guy/Hit (32x32).png
+chicken.tscn::PackedScene::997070850590863928::1709606381::0::1::::<><>::uid://qrc3j8hv4ml2::::res://graphics/enemies/Chicken/Hit (32x34).png<>res://scenes/enemies/chicken.gd<>uid://kgsgi3mr3663::::res://graphics/enemies/Chicken/Idle (32x34).png<>uid://doteh5nfqrols::::res://graphics/enemies/Chicken/Run (32x34).png
+saw.gd::GDScript::-1::1709606131::0::1::::<>CharacterBody2D<>::
+saw.tscn::PackedScene::6734886412858540040::1709606381::0::1::::<><>::res://scenes/enemies/saw.gd<>uid://bxagqs5o4nbf3::::res://graphics/Traps/Saw/On (38x38).png
+::res://scenes/items/::1709691273
+fruits.tscn::PackedScene::5360177712070796937::1709691273::0::1::::<><>::
+::res://scenes/levels/::1709606381
+level_1.tscn::PackedScene::599224644718898231::1709606381::0::1::::<><>::res://Level1.gd<>uid://bd1bsua4q18y5::::res://graphics/tilesets/Terrain (16x16).png<>uid://bklw2ah8lj6an::::res://graphics/background/Green.png<>uid://05wx83sodtsq::::res://scenes/player/player.tscn<>uid://og8u1t82u65q::::res://scenes/enemies/chicken.tscn<>uid://c27ouidlni2g7::::res://scenes/enemies/saw.tscn
+::res://scenes/player/::1709606381
+player.gd::GDScript::-1::1709605997::0::1::::<>CharacterBody2D<>::
+player.tscn::PackedScene::1818031048035042936::1709606381::0::1::::<><>::res://scenes/player/player.gd<>uid://c2345c6kaahsj::::res://graphics/main characters/Virtual Guy/Idle (32x32).png<>uid://b7mdua51jvcv4::::res://graphics/main characters/Desappearing (96x96).png<>uid://c5t3oqirm0evf::::res://graphics/main characters/Virtual Guy/Run (32x32).png<>uid://bhvuq7onkjbtx::::res://graphics/main characters/Virtual Guy/Fall (32x32).png<>uid://0ke1sapfik46::::res://graphics/main characters/Virtual Guy/Jump (32x32).png<>uid://cvsvt8hopltqb::::res://graphics/main characters/Virtual Guy/Hit (32x32).png

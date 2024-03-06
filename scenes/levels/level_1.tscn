@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://isje3s7mufnj"]
+[gd_scene load_steps=11 format=3 uid="uid://isje3s7mufnj"]
 
 [ext_resource type="Script" path="res://Level1.gd" id="1_cpvdu"]
 [ext_resource type="Texture2D" uid="uid://bd1bsua4q18y5" path="res://graphics/tilesets/Terrain (16x16).png" id="2_pubu3"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://05wx83sodtsq" path="res://scenes/player/player.tscn" id="4_7jh33"]
 [ext_resource type="PackedScene" uid="uid://og8u1t82u65q" path="res://scenes/enemies/chicken.tscn" id="5_6hxme"]
 [ext_resource type="PackedScene" uid="uid://c27ouidlni2g7" path="res://scenes/enemies/saw.tscn" id="6_auvwd"]
+[ext_resource type="PackedScene" uid="uid://cimrlxofws51n" path="res://scenes/items/fruits.tscn" id="7_ildt7"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_useop"]
 resource_name = "Terrain"
@@ -654,3 +655,37 @@ speed = 100.0
 
 [node name="Player" parent="." instance=ExtResource("4_7jh33")]
 position = Vector2(119, 328)
+
+[node name="Collectables" type="Node2D" parent="."]
+
+[node name="Fruits" parent="Collectables" instance=ExtResource("7_ildt7")]
+position = Vector2(228, 245)
+chosen_animation = "pineapple"
+
+[node name="Fruits2" parent="Collectables" instance=ExtResource("7_ildt7")]
+position = Vector2(406, 246)
+chosen_animation = "strawberry"
+
+[node name="Fruits3" parent="Collectables" instance=ExtResource("7_ildt7")]
+position = Vector2(41, 328)
+chosen_animation = "kiwi"
+
+[node name="Fruits4" parent="Collectables" instance=ExtResource("7_ildt7")]
+position = Vector2(41, 229)
+chosen_animation = "apple"
+
+[node name="Fruits5" parent="Collectables" instance=ExtResource("7_ildt7")]
+position = Vector2(135, 246)
+chosen_animation = "melon"
+
+[node name="Fruits6" parent="Collectables" instance=ExtResource("7_ildt7")]
+position = Vector2(518, 242)
+chosen_animation = "cherry"
+
+[node name="Fruits7" parent="Collectables" instance=ExtResource("7_ildt7")]
+position = Vector2(41, 276)
+chosen_animation = "banana"
+
+[node name="Fruits8" parent="Collectables" instance=ExtResource("7_ildt7")]
+position = Vector2(319, 416)
+chosen_animation = "orange"

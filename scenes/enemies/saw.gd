@@ -23,7 +23,6 @@ func _physics_process(delta):
 	move_and_slide()
 
 
-
 func _on_hitbox_body_entered(body):
 	if body.is_in_group("Player"):
 		body.player_get_hit(self)
