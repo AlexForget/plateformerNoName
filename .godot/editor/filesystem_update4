@@ -1,7 +1,6 @@
-res://scenes/items/fruits.tscn
-res://scenes/items/fruits.gd
 res://scenes/player/player.tscn
+res://scenes/player/player.gd
 res://scenes/levels/level_1.tscn
 res://scenes/enemies/chicken.tscn
 res://scenes/enemies/saw.tscn
-res://Level1.gd
+res://scenes/items/fruits.tscn

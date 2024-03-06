@@ -4,12 +4,15 @@ extends CharacterBody2D
 
 var health: int = 30
 var speed : float = 150.0
-var jump_velocity : float = -300.0
+var jump_velocity : float = -20.0
+var fall_velocity : float = 5.0
 var bounce_velocity : float = -200.0
 var horizontal_push_back_velocity : float = 250
 var acceleration : float = 15.0
 var friction : float = 1.25
 var is_immune: bool = false
+var can_jump: bool = true
+var is_jumping: bool = false
 var push_back_velocity : Vector2 = Vector2(horizontal_push_back_velocity,-150)
 
 enum state {IDLE, RUN, JUMP, FALL, HIT}
@@ -28,16 +31,20 @@ func _physics_process(delta):
 	# Get the input direction and handle the movement/deceleration.
 	var direction: float = Input.get_axis("moveLeft", "moveRight")
 
-	handle_jump()
+	handle_jump(delta)
 	handle_movement(direction)
 	update_player_state()
 	update_player_animation(direction)
 	move_and_slide()
 
-var i: int = 1
-func handle_jump():
+
+func handle_jump(delta):
+	var top_velocity_jump: int = -75
 	if Input.is_action_just_pressed("jump") and is_on_floor():
-		velocity.y = jump_velocity
+		velocity.y += gravity * jump_velocity * delta
+	elif Input.is_action_just_released("jump") && velocity.y <= top_velocity_jump && !is_on_floor():
+		velocity.y += gravity * fall_velocity * delta
+
 
 func handle_movement(direction):
 	if direction:
@@ -100,26 +107,6 @@ func player_get_hit(enemy_body):
 
 
 func manage_push_back(enemy_body):
-	if enemy_body.global_position.x > global_position.x:
-		push_back_velocity.x = -horizontal_push_back_velocity
-	elif enemy_body.global_position.x < global_position.x:
-		push_back_velocity.x = horizontal_push_back_velocity
-	velocity = push_back_velocity
-
-func enemy_pushback(enemy_body):
-	if enemy_body.velocity.x < 0 && velocity.x < 0:
-		push_back_velocity.x = horizontal_push_back_velocity
-	elif enemy_body.velocity.x < 0 && velocity.x == 0:
-		push_back_velocity.x = -horizontal_push_back_velocity
-	elif enemy_body.velocity.x < 0 && velocity.x > 0:
-		push_back_velocity.x = -horizontal_push_back_velocity
-	elif enemy_body.velocity.x > 0 && velocity.x > 0:
-		push_back_velocity.x = -horizontal_push_back_velocity
-	velocity = push_back_velocity
-
-func obstacle_pushback(enemy_body):
-	print("enemy : ", enemy_body.global_position.x)
-	print("player : ", global_position.x)
 	if enemy_body.global_position.x > global_position.x:
 		push_back_velocity.x = -horizontal_push_back_velocity
 	elif enemy_body.global_position.x < global_position.x:
