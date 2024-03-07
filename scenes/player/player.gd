@@ -14,6 +14,7 @@ var push_back_velocity : Vector2 = Vector2(horizontal_push_back_velocity,-150)
 var is_immune: bool = false
 var can_jump: bool = true
 var is_jumping: bool = false
+var is_death: bool = false
 
 
 enum state {IDLE, RUN, JUMP, FALL, HIT}
@@ -26,17 +27,19 @@ func _ready():
 	pass
 
 func _physics_process(delta):
-	# Add the gravity.
-	if !is_on_floor():
-		velocity.y += gravity * delta
-	# Get the input direction and handle the movement/deceleration.
-	var direction: float = Input.get_axis("moveLeft", "moveRight")
+	if !is_death:
+		#print(is_immune)
+		# Add the gravity.
+		if !is_on_floor():
+			velocity.y += gravity * delta
+		# Get the input direction and handle the movement/deceleration.
+		var direction: float = Input.get_axis("moveLeft", "moveRight")
 
-	handle_jump(delta)
-	handle_movement(direction)
-	update_player_state()
-	update_player_animation(direction)
-	move_and_slide()
+		handle_jump(delta)
+		handle_movement(direction)
+		update_player_state()
+		update_player_animation(direction)
+		move_and_slide()
 
 
 func handle_jump(delta):
@@ -92,19 +95,21 @@ func _on_hitbox_body_entered(body):
 
 
 func player_get_hit(enemy_body):
-	if !is_immune:
-		health -= 1
-		manage_push_back(enemy_body)
-		is_immune = true
-		
-	if health <= 0:
-		animated_sprite.play("dessapear")
-		await animated_sprite.animation_finished
-		queue_free()
-	else :
-		animated_sprite.play("hit")
-		await animated_sprite.animation_finished
-		is_immune = false
+	if !is_death:
+		if !is_immune:
+			health -= 1
+			manage_push_back(enemy_body)
+			is_immune = true
+			$Immunity.start()
+			
+		if health <= 0:
+			is_death = true
+			animated_sprite.play("dessapear")
+			await animated_sprite.animation_finished
+			queue_free()
+		else :
+			animated_sprite.play("hit")
+			await animated_sprite.animation_finished
 
 
 func manage_push_back(enemy_body):
@@ -113,3 +118,7 @@ func manage_push_back(enemy_body):
 	elif enemy_body.global_position.x < global_position.x:
 		push_back_velocity.x = horizontal_push_back_velocity
 	velocity = push_back_velocity
+
+
+func _on_immunity_timeout():
+	is_immune = false

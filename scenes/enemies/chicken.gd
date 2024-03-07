@@ -9,6 +9,8 @@ var anim_state = state.IDLE
 var direction: int = -1
 var is_death: bool = false
 
+var _player = null
+
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 
@@ -26,6 +28,7 @@ func _physics_process(delta):
 		handle_movement()
 		update_chicken_state()
 		update_chicken_animation()
+		_inflict_dommage()
 		move_and_slide()
 
 
@@ -62,4 +65,14 @@ func get_hit():
 
 func _on_hitbox_body_entered(body):
 	if body.is_in_group("Player"):
-		body.player_get_hit(self)
+		_player = body
+
+
+func _on_hitbox_body_exited(body):
+	if body.is_in_group("Player"):
+		_player = null
+
+
+func _inflict_dommage():
+	if _player != null:
+		_player.player_get_hit(self)

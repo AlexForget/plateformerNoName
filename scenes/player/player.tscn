@@ -332,7 +332,7 @@ shape = SubResource("RectangleShape2D_acury")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 scale = Vector2(4, 4)
 sprite_frames = SubResource("SpriteFrames_p3nsm")
-animation = &"idle"
+animation = &"hit"
 
 [node name="Hitbox" type="Area2D" parent="."]
 collision_mask = 2
@@ -342,4 +342,9 @@ position = Vector2(2, 58)
 shape = SubResource("RectangleShape2D_jc5v4")
 debug_color = Color(0.862745, 0.313726, 0.443137, 0.419608)
 
+[node name="Immunity" type="Timer" parent="."]
+wait_time = 0.5
+one_shot = true
+
 [connection signal="body_entered" from="Hitbox" to="." method="_on_hitbox_body_entered"]
+[connection signal="timeout" from="Immunity" to="." method="_on_immunity_timeout"]

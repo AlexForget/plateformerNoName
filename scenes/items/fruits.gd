@@ -7,7 +7,7 @@ func _ready():
 	$AnimationPlayer.play(chosen_animation)
 
 
-func _on_area_2d_body_entered(body):
+func _on_area_2d_body_entered(_body):
 	emit_signal("collected")
 	$AnimationPlayer.play("collected")
 	$AnimationPlayer.animation_finished.connect(queue_free)

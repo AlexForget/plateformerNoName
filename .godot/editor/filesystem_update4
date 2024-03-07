@@ -5,3 +5,5 @@ res://scenes/enemies/chicken.tscn
 res://scenes/enemies/saw.tscn
 res://scenes/items/fruits.tscn
 res://scenes/items/goal.tscn
+res://scenes/enemies/chicken.gd
+res://scenes/items/fruits.gd
