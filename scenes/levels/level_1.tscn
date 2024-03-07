@@ -646,7 +646,7 @@ speed = 100.0
 direction = Vector2(0, 100)
 
 [node name="Saw2" parent="Enemies" instance=ExtResource("6_auvwd")]
-position = Vector2(-245, 114)
+position = Vector2(-288, 114)
 speed = 100.0
 direction = Vector2(250, 0)
 

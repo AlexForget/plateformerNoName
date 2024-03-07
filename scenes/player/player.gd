@@ -2,18 +2,19 @@ extends CharacterBody2D
 
 @onready var animated_sprite = $AnimatedSprite2D
 
-var health: int = 30
+var health: int = 3
 var speed : float = 150.0
 var jump_velocity : float = -20.0
 var fall_velocity : float = 5.0
 var bounce_velocity : float = -200.0
-var horizontal_push_back_velocity : float = 250
 var acceleration : float = 15.0
 var friction : float = 1.25
+var horizontal_push_back_velocity : float = 250
+var push_back_velocity : Vector2 = Vector2(horizontal_push_back_velocity,-150)
 var is_immune: bool = false
 var can_jump: bool = true
 var is_jumping: bool = false
-var push_back_velocity : Vector2 = Vector2(horizontal_push_back_velocity,-150)
+
 
 enum state {IDLE, RUN, JUMP, FALL, HIT}
 var anim_state = state.IDLE
@@ -26,7 +27,7 @@ func _ready():
 
 func _physics_process(delta):
 	# Add the gravity.
-	if not is_on_floor():
+	if !is_on_floor():
 		velocity.y += gravity * delta
 	# Get the input direction and handle the movement/deceleration.
 	var direction: float = Input.get_axis("moveLeft", "moveRight")
@@ -85,14 +86,14 @@ func update_player_animation(direction):
   
 
 func _on_hitbox_body_entered(body):
-	if body.is_in_group("Enemy") && velocity.y > 0.01:
+	if body.is_in_group("Enemy") && velocity.y > 0.01 && body.has_method("get_hit"):
 		body.get_hit()
 		velocity.y = bounce_velocity
 
 
 func player_get_hit(enemy_body):
 	if !is_immune:
-		health = health - 1
+		health -= 1
 		manage_push_back(enemy_body)
 		is_immune = true
 		
